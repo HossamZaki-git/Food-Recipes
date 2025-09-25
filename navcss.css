@@ -1,0 +1,195 @@
+*
+{
+    margin: 0px !important;
+    padding-left: 0px !important;
+}
+
+:root
+{
+    --facebook:#4267B2;
+    --twitter:#1DA1F2;
+    --instgram:#E1306C;
+}
+nav
+{
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    z-index: 10000;
+}
+
+@media screen and (max-width: 767px)
+{
+    nav
+    {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 991px)
+{
+    nav
+    {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 576px)
+{
+    nav
+    {
+        width: 50%;
+    }
+    
+}
+
+.content, .search, .contact, .meal_profile
+{
+    /*
+      The appearing part from the nav bar is 25% from 50% (12.5% from the screen)
+      so what appears after it is (100% - 12.5%). For centering the content
+      in the reamaing appearing space we use:
+    */
+    margin-left: calc((100% - 12.5%) / 2 + 12.5%) !important;
+    transform: translateX(-50%);
+}
+
+.nav_links li , .social_icons a , .nav_social p
+{
+    font-size: 20px !important;
+}
+
+.logo
+{
+    width: 75%;
+    margin-top: 20px;
+}
+
+
+.nav1
+{
+    background-color: #f8f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.nav2
+{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.nav_icons
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navkey
+{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.outer_nav_links
+{
+    width: 100%;
+    height: 40%;
+    margin-top: 10% !important;
+}
+
+.nav_links
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_links li
+{
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+}
+
+.outer_nav_social
+{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 10% !important;
+}
+
+
+.nav_social
+{
+    width: 100%;
+    height: 100%;
+}
+
+.social_icons
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social_icons a
+{ 
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.instgram:hover
+{
+    color: var(--instgram) !important;
+}
+
+.facebook:hover
+{
+    color: var(--facebook) !important;
+}
+
+.twitter:hover
+{
+    color: var(--twitter) !important;
+}
+
+.facebook
+{color: var(--facebook);}
+.twitter
+{color: var(--twitter);}
+.instgram
+{color: var(--instgram);}
+
+.nav_to_hide
+{
+    display: none;
+}
+
+
